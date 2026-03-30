@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Books</h3>
+
+<button id="add">Add</button>
+<div id="list"></div>
+
+<input id="t" placeholder="Title">
+<input id="a" placeholder="Author">
+
+<script>
+
+const books = [
+  { title: "1984", author: "George Orwell" },
+  { title: "To Kill a Mockingbird", author: "Harper Lee" },
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+  { title: "Pride and Prejudice", author: "Jane Austen" },
+  { title: "The Hobbit", author: "J.R.R. Tolkien" }
+];
+
+document.getElementById("add").addEventListener("click", () => {
+  let title = document.getElementById("t").value;
+  let author = document.getElementById("a").value;
+
+ console.log(books);
+
+});
 
